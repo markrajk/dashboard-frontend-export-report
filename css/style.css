@@ -113,96 +113,133 @@ body {
     font-family: "Lato", sans-serif;
     height: 100%;
     max-height: calc(100% - 5.5rem - 6.6rem);
-    width: 50vw; }
-    .results-body .select-team {
-      min-height: 34.9vh;
-      height: 100%; }
-      .results-body .select-team-header {
+    width: 77.7rem;
+    overflow-y: auto; }
+    @media (max-width: 1199px) {
+      .results-body {
+        width: 90%; } }
+    .results-body .section {
+      margin: 1rem 0;
+      background-color: #FFF;
+      border: solid 1.5px #eaebee; }
+      .results-body .section .section-header {
         padding: 2.5rem;
         padding-top: 3.5rem; }
-        .results-body .select-team-header h2 {
+        .results-body .section .section-header h2 {
           font-size: 2.1rem;
           font-weight: 700;
           line-height: 1.19;
           letter-spacing: 0.14px;
           color: #1a173b; }
-        .results-body .select-team-header .search {
-          margin-top: 2rem;
-          position: relative;
-          width: 34.4rem;
+      .results-body .section .btn-custom-outline {
+        height: 3rem;
+        background-color: #FFF;
+        color: #0077ff;
+        font-weight: 700;
+        border: solid 1.5px #0077ff;
+        border-radius: 5px; }
+        .results-body .section .btn-custom-outline:hover {
+          background-color: #0077ff;
+          color: #FFF; }
+        .results-body .section .btn-custom-outline.active {
+          background-color: #0077ff;
+          color: #FFF; }
+          .results-body .section .btn-custom-outline.active:hover {
+            background-color: #fff;
+            color: #0077ff; }
+    .results-body .select-team {
+      min-height: 34.9vh;
+      height: 100%; }
+      .results-body .select-team-header .search {
+        margin-top: 2rem;
+        position: relative;
+        width: 34.4rem;
+        height: 3.5rem;
+        border-radius: 4px;
+        background-color: #ffffff; }
+        .results-body .select-team-header .search input {
+          width: 26.3rem;
           height: 3.5rem;
-          border-radius: 4px;
-          background-color: #ffffff; }
-          .results-body .select-team-header .search input {
-            width: 26.3rem;
-            height: 3.5rem;
-            padding-left: 4.3rem;
+          padding-left: 4.3rem;
+          font-size: 1.5rem;
+          font-weight: 500;
+          color: #000;
+          border: solid 1.5px rgba(0, 0, 0, 0.1);
+          border-radius: 1.7rem; }
+          .results-body .select-team-header .search input::placeholder {
             font-size: 1.5rem;
             font-weight: 500;
-            color: #000;
-            border: solid 1.5px rgba(0, 0, 0, 0.1);
-            border-radius: 1.7rem; }
-            .results-body .select-team-header .search input::placeholder {
-              font-size: 1.5rem;
-              font-weight: 500;
-              color: #000; }
-          .results-body .select-team-header .search i {
-            position: absolute;
-            top: 50%;
-            left: 2.5rem;
-            transform: translate(-50%, -50%); }
-      .results-body .select-team-body table td {
-        height: 4.8rem;
+            color: #000; }
+        .results-body .select-team-header .search i {
+          position: absolute;
+          top: 50%;
+          left: 2.5rem;
+          transform: translate(-50%, -50%); }
+      .results-body .select-team-body {
+        max-height: 19rem;
+        overflow: auto; }
+        .results-body .select-team-body table {
+          margin: 0 !important; }
+          .results-body .select-team-body table tr {
+            padding: 0 2rem; }
+            .results-body .select-team-body table tr.active {
+              background-color: #f4faff; }
+          .results-body .select-team-body table td {
+            height: 4.8rem;
+            font-size: 1.4rem;
+            color: #000a19;
+            vertical-align: middle; }
+            .results-body .select-team-body table td input[type=checkbox] {
+              /* Double-sized Checkboxes */
+              -ms-transform: scale(1.5);
+              /* IE */
+              -moz-transform: scale(1.5);
+              /* FF */
+              -webkit-transform: scale(1.5);
+              /* Safari and Chrome */
+              -o-transform: scale(1.5);
+              /* Opera */
+              transform: scale(1.5);
+              padding: 10px; }
+            .results-body .select-team-body table td .btn-custom-outline {
+              width: 9rem; }
+            .results-body .select-team-body table td.spacer {
+              width: 2.5rem; }
+            .results-body .select-team-body table td:nth-of-type(6) {
+              width: 9rem; }
+    .results-body .select-settings-header {
+      padding: 2.5rem;
+      padding-top: 3.5rem; }
+      .results-body .select-settings-header h2 {
+        font-size: 2.1rem;
+        font-weight: 700;
+        line-height: 1.19;
+        letter-spacing: 0.14px;
+        color: #1a173b; }
+    .results-body .select-settings-body {
+      padding: 2.5rem;
+      padding-top: 0;
+      padding-bottom: 3.5rem; }
+      .results-body .select-settings-body .btn-custom-outline {
+        height: 3.5rem;
         font-size: 1.4rem;
-        vertical-align: middle;
-        /* Hide the browser's default checkbox */
-        /* Create a custom checkbox */
-        /* On mouse-over, add a grey background color */
-        /* When the checkbox is checked, add a blue background */
-        /* Create the checkmark/indicator (hidden when not checked) */
-        /* Show the checkmark when checked */
-        /* Style the checkmark/indicator */ }
-        .results-body .select-team-body table td .container {
-          display: block;
-          position: relative;
-          padding-left: 35px;
-          margin-bottom: 12px;
-          cursor: pointer;
-          font-size: 22px;
-          -webkit-user-select: none;
-          -moz-user-select: none;
-          -ms-user-select: none;
-          user-select: none; }
-        .results-body .select-team-body table td .container input {
-          position: absolute;
-          opacity: 0;
-          cursor: pointer;
-          height: 0;
-          width: 0; }
-        .results-body .select-team-body table td .checkmark {
-          position: absolute;
-          top: 0;
-          left: 0;
-          height: 25px;
-          width: 25px;
-          background-color: #eee; }
-        .results-body .select-team-body table td .container:hover input ~ .checkmark {
-          background-color: #ccc; }
-        .results-body .select-team-body table td .container input:checked ~ .checkmark {
-          background-color: #2196F3; }
-        .results-body .select-team-body table td .checkmark:after {
-          content: "";
-          position: absolute;
-          display: none; }
-        .results-body .select-team-body table td .container input:checked ~ .checkmark:after {
-          display: block; }
-        .results-body .select-team-body table td .container .checkmark:after {
-          left: 9px;
-          top: 5px;
-          width: 5px;
-          height: 10px;
-          border: solid white;
-          border-width: 0 3px 3px 0;
-          -webkit-transform: rotate(45deg);
-          -ms-transform: rotate(45deg);
-          transform: rotate(45deg); }
+        letter-spacing: 0.35px;
+        padding: 0 1.7rem; }
+    .results-body .export-header {
+      padding: 2.5rem;
+      padding-top: 3.5rem; }
+      .results-body .export-header h2 {
+        font-size: 2.1rem;
+        font-weight: 700;
+        line-height: 1.19;
+        letter-spacing: 0.14px;
+        color: #1a173b; }
+    .results-body .export-body {
+      padding: 2.5rem;
+      padding-top: 0;
+      padding-bottom: 3.5rem; }
+      .results-body .export-body .btn-custom-outline {
+        height: 3.5rem;
+        font-size: 1.4rem;
+        letter-spacing: 0.35px;
+        padding: 0 1.7rem; }

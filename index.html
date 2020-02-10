@@ -46,8 +46,8 @@
                     <h3>PEOPLE</h3>
                     <ul class="list-unstyled">
                         <li><a href="#">Results </a></li>
-                        <li><a href="#">Export results </a></li>
-                        <li class="active"><a href="#">Manage people</a></li>
+                        <li class="active"><a href="#">Export results </a></li>
+                        <li><a href="#">Manage people</a></li>
                         <li><a href="#">Invite new people </a></li>
                     </ul>
                 </div>
@@ -80,83 +80,165 @@
                 <h2 class="mt-1 align-middle">Manage people's settings</h2>
             </div>
 
-            <div class="results-body bg-white">
-                <div class="select-teams">
-                    <div class="select-team-header">
-                        <h2>1. Select team</h2>
-                        <div class="search d-flex align-items-center">
-                            <i class="material-icons">search</i>
-                            <input type="text" placeholder="Search...">
+            <div class="results-body">
+                <!-- SELECT TEAM-->
+                    <div class="section select-teams">
+                        <div class="section-header select-team-header">
+                            <h2>1. Select team</h2>
+                            <div class="search d-flex align-items-center">
+                                <i class="material-icons">search</i>
+                                <input type="text" placeholder="Search...">
+                            </div>
                         </div>
+
+                        <div class="section-body select-team-body">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td class="spacer"></td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>Marketing</td>
+                                        <td class="d-none d-xl-block">22 people</td>
+                                        <td>Jordan Smith</td>
+                                        <td>
+                                            <button type="button" class="btn-custom-outline">Select</button>
+                                        </td>
+                                        <td class="spacer"></td>
+                                    </tr>
+
+                                    <tr class="active">
+                                        <td class="spacer"></td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>Marketing</td>
+                                        <td class="d-none d-xl-block">22 people</td>
+                                        <td>Jordan Smith</td>
+                                        <td>
+                                            <button type="button" class="btn-custom-outline active">Selected</button>
+                                        </td>
+                                        <td class="spacer"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="spacer"></td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>Marketing</td>
+                                        <td class="d-none d-xl-block">22 people</td>
+                                        <td>Jordan Smith</td>
+                                        <td>
+                                            <button type="button" class="btn-custom-outline">Select</button>
+                                        </td>
+                                        <td class="spacer"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="spacer"></td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>Marketing</td>
+                                        <td class="d-none d-xl-block">22 people</td>
+                                        <td>Jordan Smith</td>
+                                        <td>
+                                            <button type="button" class="btn-custom-outline">Select</button>
+                                        </td>
+                                        <td class="spacer"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="spacer"></td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>Marketing</td>
+                                        <td class="d-none d-xl-block">22 people</td>
+                                        <td>Jordan Smith</td>
+                                        <td>
+                                            <button type="button" class="btn-custom-outline">Select</button>
+                                        </td>
+                                        <td class="spacer"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="spacer"></td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>Marketing</td>
+                                        <td class="d-none d-xl-block">22 people</td>
+                                        <td>Jordan Smith</td>
+                                        <td>
+                                            <button type="button" class="btn-custom-outline">Select</button>
+                                        </td>
+                                        <td class="spacer"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="spacer"></td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>Marketing</td>
+                                        <td class="d-none d-xl-block">22 people</td>
+                                        <td>Jordan Smith</td>
+                                        <td>
+                                            <button type="button" class="btn-custom-outline">Select</button>
+                                        </td>
+                                        <td class="spacer"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="spacer"></td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>Marketing</td>
+                                        <td class="d-none d-xl-block">22 people</td>
+                                        <td>Jordan Smith</td>
+                                        <td>
+                                            <button type="button" class="btn-custom-outline">Select</button>
+                                        </td>
+                                        <td class="spacer"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
+                    <!-- SELECT SETTINGS-->
+                    <div class="section select-settings">
+                        <div class="section-header select-settings-header">
+                            <h2>2. Select settings</h2>
+                        </div>
 
-                    <div class="select-team-body">
-                        <table class="table">
-                            <tbody>
-                              <tr>
-                                <td>
-                                    <!-- <label class="container">
-                                        <input type="checkbox" checked="checked">
-                                        <span class="checkmark"></span>
-                                    </label> -->
-                                    <input type="checkbox">
-                                </td>
-                                <td>Marketing</td>
-                                <td>22 people</td>
-                                <td>Jordan Smith</td>
-                                <td>
-                                    <button type="button" class="btn btn-outline-primary btn-lg">Select</button>
-                                </td>
-                              </tr>
-                              
-                              <tr>
-                                  <td>
-                                    <label class="container">
-                                        <input type="checkbox" checked="checked">
-                                        <span class="checkmark"></span>
-                                      </label>
-                                    </td>
-                                    <td>Marketing</td>
-                                    <td>22 people</td>
-                                    <td>Jordan Smith</td>
-                                    <td>
-                                        <button type="button" class="btn btn-outline-primary btn-lg">Select</button>
-                                    </td>
-                                </tr>
-                                
-                                <tr>
-                                    <td>
-                                        <label class="container">
-                                            <input type="checkbox" checked="checked">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </td>
-                                    <td>Marketing</td>
-                                    <td>22 people</td>
-                                    <td>Jordan Smith</td>
-                                    <td>
-                                        <button type="button" class="btn btn-outline-primary btn-lg">Select</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <label class="container">
-                                            <input type="checkbox" checked="checked">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </td>
-                                  <td>Marketing</td>
-                                  <td>22 people</td>
-                                  <td>Jordan Smith</td>
-                                  <td>
-                                      <button type="button" class="btn btn-outline-primary btn-lg">Select</button>
-                                  </td>
-                                </tr>
-                            </tbody>
-                          </table>
+                        <div class="section-body select-settings-body">
+                            <div class="d-flex flex-wrap">
+                                <button class="btn-custom-outline active m-2">Last 4 months</button>
+                                <button class="btn-custom-outline m-2">Last 12 months</button>
+                            </div>
+                            <div class="d-flex flex-wrap">
+                                <button class="btn-custom-outline active m-2">Team overview only</button>
+                                <button class="btn-custom-outline m-2">Overview + team lead</button>
+                                <button class="btn-custom-outline m-2">Overview + all people development</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- START EXPORT-->
+                    <div class="section export">
+                        <div class="section-header export-header">
+                            <h2>3. Start export</h2>
+                        </div>
+
+                        <div class="section-body export-body">
+                            <button class="btn-custom-outline active">Start export</button>
+                        </div>
                     </div>
                 </div>
+
             </div>
 
     </main>
