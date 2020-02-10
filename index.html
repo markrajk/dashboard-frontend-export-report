@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boilerplate</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Nunito+Sans:300,400|Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- MAIN WRAPPER -->
+    <main class="main d-flex">
+
+        <!-- SIDEBAR SECTION-->
+        <div class="sidebar d-flex flex-column bg-white">
+            <div class="sidebar-info d-flex align-items-center">
+                <img class="sidebar-info-img" src="img/profile-pic.png" alt="profile picture">
+                <div class="d-flex flex-column">
+                    <p class="sidebar-info-name m-0">Andrew<span class="align-middle"></span></p>
+                    <p class="sidebar-info-title m-0">Boss</p>
+                </div>
+            </div>
+
+            <div class="sidebar-group">
+                <h3>GIVE FEEDBACK</h3>
+                <select name="sidebar-select" id="sidebar-select">
+                    <option value="one">To you people</option>
+                </select>
+            </div>
+
+            <div class="sidebar-body">
+                <div class="sidebar-group">
+                    <h3>TEAMS</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Results </a></li>
+                        <li><a href="#">Export results </a></li>
+                        <li><a href="#">Manage teams </a></li>
+                        <li><a href="#">Create a new team </a></li>
+                    </ul>
+                </div>
+    
+                <div class="sidebar-group">
+                    <h3>PEOPLE</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Results </a></li>
+                        <li><a href="#">Export results </a></li>
+                        <li class="active"><a href="#">Manage people</a></li>
+                        <li><a href="#">Invite new people </a></li>
+                    </ul>
+                </div>
+    
+                <div class="sidebar-group">
+                    <h3>ME</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Results </a></li>
+                        <li><a href="#">My account </a></li>
+                    </ul>
+                </div>
+    
+                <div class="sidebar-group">
+                    <h3>ADMIN</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">User/team register </a></li>
+                        <li><a href="#">Company Profile </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- RESULTS SECTION -->
+        <div class="results">
+            <div class="results-header">
+                <div class="results-header-logout d-flex justify-content-between">
+                    <p class="mb-0">Settings</p>
+                    <p class="text-right align-middle">Logout <i class="material-icons align-middle">exit_to_app</i></p>
+                </div>
+                <h2 class="mt-1 align-middle">Manage people's settings</h2>
+            </div>
+
+            <div class="results-body bg-white">
+                <div class="select-teams">
+                    <div class="select-team-header">
+                        <h2>1. Select team</h2>
+                        <div class="search d-flex align-items-center">
+                            <i class="material-icons">search</i>
+                            <input type="text" placeholder="Search...">
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="select-team-body">
+                        <table class="table">
+                            <tbody>
+                              <tr>
+                                <td>
+                                    <!-- <label class="container">
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label> -->
+                                    <input type="checkbox">
+                                </td>
+                                <td>Marketing</td>
+                                <td>22 people</td>
+                                <td>Jordan Smith</td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-primary btn-lg">Select</button>
+                                </td>
+                              </tr>
+                              
+                              <tr>
+                                  <td>
+                                    <label class="container">
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </td>
+                                    <td>Marketing</td>
+                                    <td>22 people</td>
+                                    <td>Jordan Smith</td>
+                                    <td>
+                                        <button type="button" class="btn btn-outline-primary btn-lg">Select</button>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        <label class="container">
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                    <td>Marketing</td>
+                                    <td>22 people</td>
+                                    <td>Jordan Smith</td>
+                                    <td>
+                                        <button type="button" class="btn btn-outline-primary btn-lg">Select</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label class="container">
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                  <td>Marketing</td>
+                                  <td>22 people</td>
+                                  <td>Jordan Smith</td>
+                                  <td>
+                                      <button type="button" class="btn btn-outline-primary btn-lg">Select</button>
+                                  </td>
+                                </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        $('.your-checkbox').prop('indeterminate', true)
+    </script>
+</body>
+</html>
