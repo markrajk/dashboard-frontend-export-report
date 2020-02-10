@@ -117,7 +117,7 @@ body {
     overflow-y: auto; }
     @media (max-width: 1199px) {
       .results-body {
-        width: 90%; } }
+        width: 100%; } }
     .results-body .section {
       margin: 1rem 0;
       background-color: #FFF;
