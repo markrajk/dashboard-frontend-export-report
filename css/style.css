@@ -114,9 +114,8 @@ body {
       font-size: 1.5rem;
       font-weight: 600;
       color: #6e747e; }
-      .results-header-logout {
-        color: #1a173b;
-        font-weight: 700; }
+      .results-header-logout p {
+        color: #1a173b; }
       .results-header-logout i {
         margin-top: 0;
         margin-left: -3px;
