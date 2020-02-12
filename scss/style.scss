@@ -41,12 +41,16 @@ $red-gradient: linear-gradient(#fa2020, #ef0049);
 html {
   font-size: 62.5%;
   //font-size: 68%;
-  @include respond(desktop-xl) {
+  @include respond(desktop-xxl) {
     font-size: 58%;
   }
 
-  @include respond(desktop-md) {
+  @include respond(desktop-xl) {
     font-size: 53%;
+  }
+
+  @include respond(desktop-md) {
+    font-size: 48%;
   }
 }
 
@@ -64,9 +68,13 @@ body {
 }
 
 .sidebar {
-  height: 100%;
+  position: fixed;
+  height: 100vh;
   min-width: 24.4rem;
+  top: 0;
+  left: 0;
   padding: 4.2rem 3rem;
+  padding-bottom: 0;
   box-shadow: 0 2px 9px rgba(0, 0, 0, 0.06);
   z-index: 1000;
 
@@ -167,11 +175,22 @@ body {
 
 .results {
   //height: 100%;
+  margin-left: 24.4rem;
   width: 100%;
   background-color: #f8f9fb;
-  padding: 4.1rem 4.6rem 2.8rem 3.4rem;
+  padding: 0 4.6rem 2.8rem 3.4rem;
 
   &-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100% - 24.4rem);
+    height: 17rem;
+    margin-left: 24.4rem;
+    padding: 4.1rem 4.6rem 0 3.4rem;
+    background-color: #f8f9fb;
+    z-index: 500;
+
     &-logout {
       height: 2rem;
       margin: 0;
@@ -199,6 +218,7 @@ body {
   }
 
   &-body {
+    margin-top: 17rem;
     font-family: "Lato", sans-serif;
     height: 100%;
     max-height: calc(100% - 5.5rem - 6.6rem);
@@ -206,7 +226,7 @@ body {
     //max-height: 60rem;
     // overflow-y: auto;
     // overflow-x: hidden;
-    overflow-y: auto;
+    // overflow-y: auto;
     @include respond(desktop-lg) {
         width: 100%;
     }
