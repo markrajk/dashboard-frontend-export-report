@@ -231,7 +231,7 @@ body {
     // overflow-y: auto;
     // overflow-x: hidden;
     // overflow-y: auto;
-    @include respond(desktop-lg) {
+    @include respond(desktop-md) {
         width: 100%;
     }
 

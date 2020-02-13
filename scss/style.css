@@ -134,7 +134,7 @@ body {
     font-family: "Lato", sans-serif;
     max-height: calc(100% - 5.5rem - 6.6rem);
     width: 77.7rem; }
-    @media (max-width: 991px) {
+    @media (max-width: 767px) {
       .results-body {
         width: 100%; } }
     .results-body .section {
@@ -253,3 +253,5 @@ body {
         font-size: 1.4rem;
         letter-spacing: 0.35px;
         padding: 0 1.7rem; }
+
+/*# sourceMappingURL=style.css.map */
