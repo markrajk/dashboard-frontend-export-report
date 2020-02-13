@@ -133,10 +133,7 @@ body {
     margin-top: 17rem;
     font-family: "Lato", sans-serif;
     max-height: calc(100% - 5.5rem - 6.6rem);
-    width: 77.7rem; }
-    @media (max-width: 991px) {
-      .results-body {
-        width: 100%; } }
+    max-width: 77.7rem; }
     .results-body .section {
       margin: 1rem 0;
       background-color: #FFF;

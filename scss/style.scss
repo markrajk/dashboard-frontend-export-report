@@ -226,14 +226,14 @@ body {
     font-family: "Lato", sans-serif;
     //height: 100%;
     max-height: calc(100% - 5.5rem - 6.6rem);
-    width: 77.7rem;
+    max-width: 77.7rem;
     //max-height: 60rem;
     // overflow-y: auto;
     // overflow-x: hidden;
     // overflow-y: auto;
-    @include respond(desktop-md) {
-        width: 100%;
-    }
+    // @include respond(desktop-md) {
+    //     width: 100%;
+    // }
 
 
     .section {
