@@ -198,6 +198,8 @@ body {
           margin: 0 !important; }
           .results-body .select-team-body table tr {
             padding: 0 2rem; }
+            .results-body .select-team-body table tr:hover {
+              background-color: #f4faff; }
             .results-body .select-team-body table tr.active {
               background-color: #f4faff; }
           .results-body .select-team-body table td {
@@ -205,7 +207,7 @@ body {
             font-size: 1.4rem;
             color: #000a19;
             vertical-align: middle; }
-            .results-body .select-team-body table td input[type=checkbox] {
+            .results-body .select-team-body table td input[type=checkbox]:checked ~ td {
               /* Double-sized Checkboxes */
               margin-top: .5rem; }
             .results-body .select-team-body table td .btn-custom-outline {

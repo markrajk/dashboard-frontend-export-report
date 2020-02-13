@@ -325,6 +325,10 @@ body {
                 & tr {
                     padding: 0 2rem;
 
+                    &:hover {
+                      background-color: #f4faff;
+                    }
+
                     &.active {
                         background-color: #f4faff;
                     }
@@ -335,7 +339,7 @@ body {
                     color: #000a19;
                     vertical-align: middle;
 
-                    & input[type=checkbox] {
+                    & input[type=checkbox]:checked ~ td {
                         /* Double-sized Checkboxes */
                         // -ms-transform: scale(1.3); /* IE */
                         // -moz-transform: scale(1.3); /* FF */
